@@ -10,9 +10,9 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 
 ****WHAT TO DO****
-    []Make a JS, CSS and HTML file
-    []Set up my html basic bone structure
-         []Make a form(make sure it's formatted correctly) - include:
+    [x]Make a JS, CSS and HTML file
+    [x]Set up my html basic bone structure
+    []Make a form(make sure it's formatted correctly) - include:
         []First name
         []last name
         []ID Number
