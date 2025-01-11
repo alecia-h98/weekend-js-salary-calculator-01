@@ -2,8 +2,12 @@ h1{
     color: aqua;
 }
 
+form{
+  margin: 5%;
+}
 
-/*UPDATE THE 
+
+/*UPDATE THE STYLE WHEN WEBPAGE IS FUNCTIONING
 /* TABLE */
 table {
     width: 100%;
