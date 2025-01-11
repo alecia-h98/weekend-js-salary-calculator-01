@@ -12,20 +12,23 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 ****WHAT TO DO****
     [x]Make a JS, CSS and HTML file
     [x]Set up my html basic bone structure
-    []Make a form(make sure it's formatted correctly) - include:
-        []First name
-        []last name
-        []ID Number
-        []Job Title
-        []Annual Salary
-        []Submit button
-    []Set up an area to store the information - array
-    []Set up a function to add up the monthly cost of each employee -
-        []Append the information to the DOM
+    [x]Make a form(make sure it's formatted correctly) -html - include:
+        [x]First name
+        [x]last name
+        [x]ID Number
+        [x]Job Title
+        [x]Annual Salary
+        [x]Submit button
+    []Set up a global array for your data
+    []Set up an area to store the input information - js - array
+        []Set up the links to your html
+        []Push the inputs to your array (make sure the array is set up in the global scope so you can call it in your monthly cost function)
         []Clear the input fields
-        []If the monthly cost exceeds $20,000 trigger a red background color on the monthly cost. -conditional statement
-        []Create a delete button that removes an employee from the DOM
-            -It doesn't have to remove that EMployee's salary from the reported total(update it anyways.****Stretch goal***)
+        []DONT FORGET THE PREVENT DEFAULT METHOD
+    []Set up a function to add up the monthly cost of each employee - js -
+        []Append the information to the DOM - js -
+        []If the monthly cost exceeds $20,000 trigger a red background color on the monthly cost. -conditional statement - js -
+        []Create a delete button that removes an employee from the DOM - js -
    
     ****ACTUAL STRETCH GOALS****
     []Add styling
