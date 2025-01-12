@@ -27,7 +27,21 @@ function onSubmit(event){
         salary: Number(salaryElement.value),
     };
 
+//pushing objects to the global array
  employeeData.push(userInput);
+
+//updating the table with form responses
+const tableList = document.getElementById("table-data");
+
+tableList.innerHTML += `<tr>
+              <td>${firNameElement.value}</td>
+              <td>${lastNameElement.value}</td>
+              <td>${idElement.value}</td>
+              <td>${titleElement.value}</td>
+              <td>$${salaryElement.value}</td>
+              <td><button>Delete</button></td>
+              </tr>`;
+
 
  //clearing the form fields
  firNameElement.value = "";
@@ -36,12 +50,31 @@ function onSubmit(event){
  titleElement.value = "";
  salaryElement.value = "";
 
+ //updating the table to match info put in the form
+//  render();
 
- console.log(employeeData);
+
+
+ console.log("employee array: ", employeeData);
 }
 
-function render(){
-    const formList = document.getElementById("form");
+// function render(){
+//     //linking inputs to my js file
+//     const formList = document.getElementById("form");
 
-    formList.innterHTML = '';
-}
+//     formList.innterHTML = '';
+
+//     console.log(formList);
+
+//     //Looping overthe array and appending inputted info the the dom
+//     for(let i = 0; i<employeeData.length; i++){
+//         formList.innerHTML += `<tr>
+//               <td>${employeeData[i].fName}</td>
+//               <td>${employeeData[i].lName}</td>
+//               <td>${employeeData[i].id}</td>
+//               <td>${employeeData[i].title}</td>
+//               <td>$${employeeData[i].salary}</td>
+//               <td><button>Delete</button></td>
+//               </tr>`
+//     }
+// }
