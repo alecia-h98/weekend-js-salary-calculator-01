@@ -29,5 +29,19 @@ function onSubmit(event){
 
  employeeData.push(userInput);
 
+ //clearing the form fields
+ firNameElement.value = "";
+ lastNameElement.value = "";
+ idElement.value = "";
+ titleElement.value = "";
+ salaryElement.value = "";
+
+
  console.log(employeeData);
+}
+
+function render(){
+    const formList = document.getElementById("form");
+
+    formList.innterHTML = '';
 }
