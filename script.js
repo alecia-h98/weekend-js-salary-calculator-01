@@ -7,6 +7,7 @@ function readyNow(){
     console.log('DOM IS READY!!');
 }
 
+//creating my form submit button -adding employees to the DOM
 function onSubmit(event){
 //preventing the webpages default behavior
     event.preventDefault();
@@ -50,18 +51,39 @@ tableList.innerHTML += `<tr>
  titleElement.value = "";
  salaryElement.value = "";
 
- //updating the table to match info put in the form
-//  render();
+ console.log(`employee array: ${employeeData}`);
 
-
-
- console.log("employee array: ", employeeData);
+ renderMonthlyCost();
 }
 
+//function to delete the employees if need be...ya FIRED!
 function deleteButton(event){
     event.target.closest("tr").remove();
+
+//updating the monthly cost
+
 }
 
+//adding up all of the salaries to get our monthly cost
+function addMonthlyCost(){
+    let total = 0;
+    for (const userInput of employeeData){
+        console.log(userInput);
+        total += Number(userInput.salary);
+    }
+    return total;
+}
+
+function renderMonthlyCost(){
+    const monthlyTotal = addMonthlyCost();
+    const moneyElement = document.getElementById("cost");
+    if(monthlyTotal >= 20000){
+        console.log("SHOULD BE RED");
+        
+    }
+    moneyElement.innerHTML = `Total monthly cost: $${monthlyTotal}`;
+
+}
 // function render(){
 //     //linking inputs to my js file
 //     const formList = document.getElementById("form");

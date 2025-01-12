@@ -25,11 +25,11 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
         [x]Push the inputs to your array (make sure the array is set up in the global scope so you can call it in your monthly cost function)
         [x]Clear the input fields
         [x]DONT FORGET THE PREVENT DEFAULT METHOD
-    []Set up a function to add up the monthly cost of each employee - js -
-        []Append the information to the DOM - js -
+        [x]Set up the delete button
+    [x]Set up a function to add up the monthly cost of each employee - js -
+        [x]Append the information to the DOM - js -
         []If the monthly cost exceeds $20,000 trigger a red background color on the monthly cost. -conditional statement - js -
-        []Create a delete button that removes an employee from the DOM - js -
-   
+
     ****ACTUAL STRETCH GOALS****
     []Add styling
     []Extra functionality
