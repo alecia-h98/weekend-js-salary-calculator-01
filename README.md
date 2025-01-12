@@ -19,12 +19,12 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
         [x]Job Title
         [x]Annual Salary
         [x]Submit button
-    []Set up a global array for your data
-    []Set up an area to store the input information - js - array
-        []Set up the links to your html
-        []Push the inputs to your array (make sure the array is set up in the global scope so you can call it in your monthly cost function)
-        []Clear the input fields
-        []DONT FORGET THE PREVENT DEFAULT METHOD
+    [x]Set up a global array for your data
+    [x]Set up an area to store the input information - js - array
+        [x]Set up the links to your html
+        [x]Push the inputs to your array (make sure the array is set up in the global scope so you can call it in your monthly cost function)
+        [x]Clear the input fields
+        [x]DONT FORGET THE PREVENT DEFAULT METHOD
     []Set up a function to add up the monthly cost of each employee - js -
         []Append the information to the DOM - js -
         []If the monthly cost exceeds $20,000 trigger a red background color on the monthly cost. -conditional statement - js -

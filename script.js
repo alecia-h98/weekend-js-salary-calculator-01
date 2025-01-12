@@ -39,7 +39,7 @@ tableList.innerHTML += `<tr>
               <td>${idElement.value}</td>
               <td>${titleElement.value}</td>
               <td>$${salaryElement.value}</td>
-              <td><button>Delete</button></td>
+              <td><button onclick="deleteButton(event)">Delete</button></td>
               </tr>`;
 
 
@@ -56,6 +56,10 @@ tableList.innerHTML += `<tr>
 
 
  console.log("employee array: ", employeeData);
+}
+
+function deleteButton(event){
+    event.target.closest("tr").remove();
 }
 
 // function render(){
