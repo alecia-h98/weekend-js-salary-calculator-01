@@ -60,8 +60,9 @@ tableList.innerHTML += `<tr>
 function deleteButton(event){
     event.target.closest("tr").remove();
 
-//updating the monthly cost
-
+    //updating the monthly cost
+    // employeeData.splice();
+    // renderMonthlyCost();
 }
 
 //adding up all of the salaries to get our monthly cost
@@ -69,7 +70,7 @@ function addMonthlyCost(){
     let total = 0;
     for (const userInput of employeeData){
         console.log(userInput);
-        total += Number(userInput.salary);
+        total += Number(userInput.salary) / 12;
     }
     return total;
 }
@@ -85,9 +86,8 @@ function renderMonthlyCost(){
         alert("ALERT: YOU'RE SPENDING TOO MUCH MONEY!! TIME TO RE-EVALUTAE IF JOHN NEEDS TO BE BUYING SO MANY YO-YOS WITH THE COMPANY CREDIT CARD");
         moneyElement.style.color = ("red");
     }
-    
-
 }
+
 
 // function colorChange(){
 //     let redColor
