@@ -1,6 +1,4 @@
-h1{
-    color: aqua;
-}
+
 
 form{
   margin: 5%;
@@ -23,12 +21,12 @@ table {
     min-width: 3.5em;
   }
   thead {
-    background: #80d2da;
-    color: #fcfcfc;
+    background: #eab355;
+    color: #070706;
   }
   tbody tr:nth-child(odd){ 
-    background: #fcfcfc;
+    background: #c2f1ae4f;
   }
   tbody tr:nth-child(even){
-    background: #dcdcdc;
+    background: #80d3da4b;
   }

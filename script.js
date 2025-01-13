@@ -77,13 +77,23 @@ function addMonthlyCost(){
 function renderMonthlyCost(){
     const monthlyTotal = addMonthlyCost();
     const moneyElement = document.getElementById("cost");
+    moneyElement.innerHTML = `Total monthly cost: $${monthlyTotal}`;
+    
+  //changing font color to red if over 20,000 
     if(monthlyTotal >= 20000){
         console.log("SHOULD BE RED");
-        
+        alert("ALERT: YOU'RE SPENDING TOO MUCH MONEY!! TIME TO RE-EVALUTAE IF JOHN NEEDS TO BE BUYING SO MANY YO-YOS WITH THE COMPANY CREDIT CARD");
+        moneyElement.style.color = ("red");
     }
-    moneyElement.innerHTML = `Total monthly cost: $${monthlyTotal}`;
+    
 
 }
+
+// function colorChange(){
+//     let redColor
+// }
+
+
 // function render(){
 //     //linking inputs to my js file
 //     const formList = document.getElementById("form");
